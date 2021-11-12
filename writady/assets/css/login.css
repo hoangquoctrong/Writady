@@ -89,20 +89,19 @@ flex: 3
 .contact-txt{
 flex: 2
 }
-.sign-in-form{
+
+
+.sign-in-form, .sign-up-form, .verify-form{
     position: absolute;
     width: 454px;
     height: 615px;
-    left: 728px;
+    left: 800px;
     top: 60px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
 }
-.fas fa-user{
-    position: absolute;
-
-}
+/*Đăng nhập*/
 .title{
 
     position: relative;
@@ -146,6 +145,11 @@ flex: 2
     font-weight: bolder;
     color: #18A0FB;
 }
+input[type="text"], input[type="password"] {  
+    padding-left: 10px;
+    /* Firefox, Chrome, Opera */ 
+
+} 
 .input-field{
     margin-top: 5%;
     width: 454px;
@@ -153,13 +157,13 @@ flex: 2
 }
 .input-field > input{
     margin-left: 12%;
-    width: 341px;
+    width: 331px;
     height: 50px;
-    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     font-size: 16px;
-    border:#F6FFFD;
-    background-color: #DDF8FC;
+    border: 0.5px solid #00659E;
+    background-color: #F6FFFD;
 }
 .option-div{
     margin-top: 4%;
@@ -284,20 +288,112 @@ color: #18A0FB;
     color: #666666;
     text-align: center;
 }
-/* About us */
-/*
-position: absolute;
-width: 62px;
-height: 19px;
-left: 198px;
-top: 650px;
+/*Đăng ký*/
+.title-register{
+    position: relative;
+    width: 454px;
+    height: 35px;
+    text-align: center;
+    font-family: 'Roboto', Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    font-size: 35px;
+    color: #050000;
+}
+.to-login{
+    flex-direction: row;
+    position: relative;
+    
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+.register-name{
+    
+    width: 454px;
+    margin-top: 5%;
+    display: flex;
+}
+.register-name > .input-name-1{
+    margin-left: 12%;
+    align-items: center;
+}
+.register-name > .input-name-2{
+    margin-left: 6%;
+    align-items: center;
+}
 
-font-family: Lora;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
+.input-name-1 > input{
+    width: 140px;
+    height: 40px;
+    box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 16px;
+    border: 0.5px solid #00659E;
+    background-color: #F6FFFD;
+}
+.input-name-2 > input{
+    width: 150px;
+    height: 40px;
+    box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 16px;
+    border: 0.5px solid #00659E;
+    background-color: #F6FFFD;
+}.input-field-2{
+    margin-top: 4%;
+    width: 454px;
+    align-items: center;
+}
+.input-field-2 > input{
+    margin-left: 12%;
+    width: 331px;
+    height: 40px;
+    box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 16px;
+    border: 0.5px solid #00659E;
+    background-color: #F6FFFD;
+}
+.date-of-birth{
+    display: flex;
+    margin-left: 12%;
+    width: 341px;
+}
+.date-of-birth > div{
+    flex : 1;
+}
+.date-of-birth > select{
+    flex: 6;
+}
+select{
+    appearance: none;
+    font-family: Roboto,sans-serif;
+    box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 16px;
+    border: 0.5px solid #00659E;
+    background-color: #F6FFFD;
+}
+.gender-group{
+    margin-top: 2%;
+    display: flex;
+    margin-left: 12%;
+    width: 351px;
+    align-content: center;
+}
+.radio{
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    flex: 2;
+    display: inline-block;
+    vertical-align: middle;
+}
