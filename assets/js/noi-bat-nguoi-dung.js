@@ -1,4 +1,3 @@
-
 function follow(clicked_id) {
     var x = document.getElementById(clicked_id);
     if (x.value == "Theo dõi") {

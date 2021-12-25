@@ -802,3 +802,22 @@
   .disable{
     background: #d6d6d6;
   }
+
+  #home-topic .the-loai:hover{
+      cursor: pointer;
+      color: #0AB1CE;
+  }
+
+  .list-bai-viet .the-loai:hover{
+    cursor: pointer;
+    color: #0AB1CE;
+  }
+
+  .list-chu-de .o-vuong:hover{
+    color: #0AB1CE;
+  }
+
+  .quan-tam .the-loai:hover{
+    cursor: pointer;
+    color: #0AB1CE;
+  }

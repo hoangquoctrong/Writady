@@ -70,10 +70,12 @@
     margin-right: 10px;
     margin-left: 10px;
 }
+
 .list-chu-de .chu-de .picture:hover{
     cursor: pointer;
     border: 4px solid #3398D4;
 }
+
 .list-chu-de .picture{
     display: flex;
     justify-content: center;
@@ -87,25 +89,44 @@
     object-fit: none;
 }
 
+.pc1{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/the-thao.jfif);
+}
+
+.pc2{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/phim.jfif);
+}
+
+.pc3{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/doi-song.jfif);
+}
+
+.pc4{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/esport.jfif);
+}
+
+.pc5{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/chuyen-tro.jfif);
+}
+
+.pc6{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/khoa-hoc.jfif);
+}
 .list-chu-de .the-loai{
     font-family: 'Be Vietnam Pro';
+    color: #fff;
 }
 
 .list-chu-de .follow{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 20px;
-    margin: 0px 30px;
-    background: #FFFFFF;
-    border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 20px;
     font-family: 'Be Vietnam Pro';
 }
 .list-chu-de .follow:hover, .followed:hover{
     cursor: pointer;
-    border: 2px solid #3398D4;
 }
 .list-chu-de .followed{
     display: flex;
