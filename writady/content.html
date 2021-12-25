@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="icon" href="./assets/img/logo.png"> 
+        <link rel="stylesheet" href="./assets/css/content.css">
+        <link rel="stylesheet" href="./assets/css/heading.css">
+        <link rel="stylesheet" href="./assets/css/card-scroller.css">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="/assets/icon/themify-icons/themify-icons.css">
+    </head>
+    <body>
+          <!--begin heading -->
+       <div>
+        <div id="heading">
+            <img class="writady-img" src="./assets/img/writady.png" alt="">
+            <a href="#"><div id="writady">Writady</div></a>
+            <ul class="nav">
+                <li><a href="" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
+                <li><a href="" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
+                <li><a href="" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
+            </ul>
+            <div id="icon-btns">
+                <ul class="icon-btn">
+                    <li><i onclick="displaySearch()" class="search-icon ti-search" id="search-btn"></i></li>
+                    <li onclick="displayNotify()">
+                        <div>
+                            <i class="notify-icon ti-bell"></i>
+                            <div class="ping-number">2</div>
+                            
+                        </div></li>
+                    <li><i class="avatar-icon"></i></li>
+                    <div class="notify-box" id="notify" >
+                        <h2>
+                            Thông báo
+                            <div>
+                                <input onclick="AllNotify()" type="submit" id="AllNotify" class="btn" value="Tất cả">
+                                <input onclick="NotRead()" type="submit" id="NotRead" class="btn" value="Chưa đọc">
+                            </div>
+                           
+                        </h2>
+                        
+                        <div class="notifi-item">
+                            <img src="./assets/img/avatar.jpg" alt="img">
+                            <div class="text">
+                                <h4>"Nỗi đau của chàng Werther" - Khi tình yêu trở thành niềm đam mê cực đoan</h4>
+                                <p>10 phút trước</p>
+                            </div> 
+                            <div class="not-read">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="notifi-item readed" id="readed">
+                            <img src="./assets/img/avatar.jpg" alt="img">
+                            <div class="text">
+                                <h4>Home Alone: Bộ phim "yêu lại" mỗi mùa Giáng Sinh</h4>
+                                <p>16 phút trước</p>
+                            </div> 
+                            <div class="read">
+
+                            </div>
+                        </div>
+        
+                        <div class="notifi-item">
+                            <img src="./assets/img/avatar.jpg" alt="img">
+                            <div class="text">
+                                <h4>Các mối quan hệ của chúng ta đổ vỡ bởi phần lớn mọi người giao tiếp với nhau...</h4>
+                                <p>30 phút trước</p>
+                            </div> 
+                            <div class="not-read">
+                                
+                            </div>
+                        </div>
+        
+                        <div class="notifi-item readed" >
+                            <img src="./assets/img/avatar.jpg" alt="img">
+                            <div class="text">
+                                <h4>[Review Sách] Kafka Bên Bờ Biển- Logic và Phi logic</h4>
+                                <p>37 phút trước</p>
+                            </div> 
+                            <div class="read">
+
+                            </div>
+                        </div>
+        
+    
+                    </div>
+                </ul>
+            </div>
+            
+            <div id="write-text">Viết bài</div>        
+        </div>
+        <form action="" class="search-bar-container" id="search-container">
+            <i onclick="displayHeading()" class="fas fa-arrow-left" ></i>
+            <input type="search" id="search-bar" placeholder="Tìm kiếm ...">
+            <i class="fas fa-search"></i>
+        </form>
+    </div>
+        <!-- end heading -->
+
+        <!-- begin genre -->
+        <!-- <div class="Genres-field">
+            <img src="./assets/img/the-thao.jpg" alt="">
+            <div>
+                Thể thao
+                <input type="submit" class="btn" value="Following">
+            </div>
+        </div> -->
+        <!-- end genre-->
+
+        <!-- begin content-->
+        <div class="content">
+            <div class="sticky-bar">
+                <i class="fas fa-chevron-up" id="vote"></i>
+                <div class="favorite-number">500</div>
+                <i class="fas fa-chevron-down" id="vote"></i>
+                <img class="avatar" id="sticker-avatar" src="./assets/img/avatar.jpg" alt="">
+                <input type="submit" onclick="myFunction()" id="btn" class="btn-sticker btn" value="Theo dõi">
+                <div class="sticker-icons">
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="sticker-icons">
+                    <i class="far fa-comment-dots"></i>
+                </div>
+                <div class="comment-number">3</div>
+                <div class="sticker-icons">
+                    <i  class="far fa-paper-plane"></i>
+                </div>
+                
+            </div>
+            <div class="center-content">
+                <div class="content-heading">
+                    <div class="genre">
+                        Sách
+                    </div>
+                    <div class="title">
+                        <h1>
+                            Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?
+                        </h1>
+                    </div>
+                    <div class="sub-title">
+                        <h4>
+                            Steve Jobs khi còn nhỏ say mê Thiền tông, từng cạo đầu, mặc áo cà sa và nghiêm túc cân nhắc trở thành nhà sư.
+                        </h4>
+                    </div>
+                    <div class="author">
+                        <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                        <div class="author-information">
+                            Quoc Trong
+                            <div class="Date-out">
+                                20 Tháng 10 2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="img-info">
+                        <img src="./assets/img/content-image/bg1.jpeg" alt="">
+                    </div>
+                    
+                    <div class="content-words">
+                        Khi Peter Hurford bước vào năm cuối tại Đại học Denison, anh cần phải tìm ra câu trả lời cho câu hỏi mình sẽ làm gì với cuộc đời này. Lúc đấy, anh mới 22 tuổi, học chuyên ngành khoa học chính trị và tâm lý học, và anh biết mình muốn có một sự nghiệp vừa khiến bản thân hài lòng vừa tạo ra được sự khác biệt lớn. Tốt nghiệp đại học là sự lựa chọn rõ ràng cho một người có những mối quan tâm như vậy, nhưng Peter không biết liệu mình có những lựa chọn khác không, hoặc làm thế nào để đưa ra được lựa chọn đúng đắn. 
+                    </div>
+                    <div class="content-words">
+                        Những người trẻ như Peter, những người muốn tạo ra sự khác biệt trong sự nghiệp nên quyết định như thế nào? Điều gì xảy ra khi bạn có một công việc ổn định nhưng đang cân nhắc đổi việc để có thể tạo ra tác động lớn hơn? Có nhiều đến chóng mặt những con đường phát triển sự nghiệp khác nhau, mỗi con đường đều có những mặt tích cực và tiêu cực. Đồng thời, quyết định kiểu này là một loại rủi ro. 
+                    </div>
+                    <div class="content-words">
+                        Lựa chọn nghề nghiệp là lựa chọn về cách bạn sẽ dành hơn 8 vạn giờ trong suốt cuộc đời cho một thứ gì đó, đồng nghĩa với việc bạn nên đầu tư một lượng thời gian đáng kể vào quyết định này. Nếu chỉ dành 1% thời gian làm việc của mình để suy nghĩ về cách dành 99% còn lại, điều đó có nghĩa bạn sẽ dành 800 giờ hoặc 20 tuần làm việc cho quyết định nghề nghiệp của bản thân. Tôi nghi ngờ liệu có nhiều người dành nhiều thời gian như vậy để suy nghĩ về sự nghiệp của họ không, nhưng lượng thời gian đó có thể đáng giá. 
+                    </div>
+                    <div class="content-words">
+                        Có nhiều cân nhắc liên quan đến việc lựa chọn nghề nghiệp phù hợp với bạn và khung quy chiếu này đảm bảo rằng bạn để tâm đến những yếu tố quan trọng nhất.
+                    </div>
+                    <div class="img-info">
+                        <img src="./assets/img/content-image/bg2.png" alt="">
+                        Steve Jobs tại Đại học Stanford (Mỹ). Ảnh từ CNN
+                    </div>
+
+                    <div class="quotes">
+                        <div class="quote-icon-left quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            Tuy nhiên, hiểu theo nghĩa đen, ý niệm theo đuổi đam mê là một lời khuyên khủng khiếp. 
+                        </blockquote>
+                        <div class="quote-icon-right quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="content-words">
+                        Thông điệp của Jobs, về mặt cảm xúc, gây được tiếng vang và rất hấp dẫn, rồi những lời khuyên nghề nghiệp thường được xây dựng xung quanh các khẩu hiệu như “làm theo trái tim của bạn” hoặc “theo đuổi đam mê của bạn”. Đoạn đầu tiên của cuốn sách hướng nghiệp Career Ahead kết thúc thế này: “Bạn nợ bản thân việc được làm công việc mình yêu thích. Quyển sách này sẽ chỉ cho bạn cách đạt được điều đấy.” 
+                    </div>
+                    <div class="content-words">
+                        Điều này đưa chúng ta đến quan điểm thứ ba chống lại việc theo đuổi đam mê, đó là những yếu tố dự đoán chính xác nhất sự hài lòng trong công việc là các đặc điểm của chính công việc đó, chứ không phải những sự thật về đam mê cá nhân. Thay vì cố gắng tìm ra nghề nghiệp để theo đuổi dựa trên bất cứ điều gì bạn cảm thấy hứng thú nhất thời ngay hôm nay, bạn nên bắt đầu bằng cách tìm kiếm công việc với một số đặc điểm quan trọng nhất định. Nếu tìm thấy điều đó, đam mê sẽ theo chân bạn. 
+                    </div>
+                </div>
+                <div class="information" >
+                    <div>
+                        <span class="favorite">
+                            <i class="fas fa-chevron-up" id="vote"></i>
+                        </span>
+                        <span class="favorite">
+                            <div>500</div>
+                        </span>
+                        <span class="favorite">
+                            <i class="fas fa-chevron-down" id="vote"></i>
+                        </span>
+                        <span class="view">
+                            <i class="far fa-eye"></i>
+                        </span>
+                        <span class="view">
+                            <div>500</div>
+                        </span>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+
+                <div class="separate-line"></div>
+
+                <div class="end-author">
+                    <div class="author">
+                        <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                        <div class="author-information">
+                            Quoc Trong
+                            <div>
+                                Tác giả của tháng
+                            </div>
+                        </div>
+                    </div>
+                    <div class="following">
+                        <input onclick=myFunction1() id="btn1" type="submit" class="btn endauthor-btn" value="Theo dõi">
+                    </div>
+                </div>
+                <div class="end-genre">
+                    <div class="genre-info">
+                        <div class="genre-name">Khoa học - Công nghệ</div>
+                        <div class="genre-tag">/khoaHocCongNghe</div>
+                    </div>
+                    <div class="following">
+                        <input onclick="myFunction2()" id="btn2"  type="submit" class="btn endauthor-btn" value="Đang theo dõi">
+                    </div>
+                </div>
+                
+
+                <div class="separate-line"></div>
+                
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="Bai-viet-noi-bat">Bài viết nổi bật khác</div>
+        <div class="card-container">
+            
+            <div class="card-content" style="display: none">
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                <div class="card-info">
+                  <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                  <p>Lần đầu nhận nuôi mèo</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì? </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Lần đầu nhận nuôi mèo</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                <div class="card-info">
+                    <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                    <p>Lần đầu nhận nuôi mèo</p>
+                </div>
+              </div>
+              <div class="pagination">
+                <li class="page-item previous-page disable"><a class="page-link" href="#home1"><</a></li>
+                <li class="page-item current-page active"><a class="page-link" href="#home1">1</a></li>
+                <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#home1">5</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#home1">6</a></li>
+                <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#home1">10</a></li>
+                <li style="position: relative; right: 100px;" class="page-item next-page"><a class="page-link" href="#home1">></a></li>
+              </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function getPageList(totalPages, page, maxLength){
+              function range(start, end){
+                return Array.from(Array(end - start + 1), (_, i) => i + start);
+              }
+            
+              var sideWidth = maxLength < 9 ? 1 : 2;
+              var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+              var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+            
+              if(totalPages <= maxLength){
+                return range(1, totalPages);
+              }
+            
+              if(page <= maxLength - sideWidth - 1 - rightWidth){
+                return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+              }
+            
+              if(page >= totalPages - sideWidth - 1 - rightWidth){
+                return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+              }
+            
+              return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+            }
+            
+            $(function(){
+              var numberOfItems = $(".card-content .card").length;
+              var limitPerPage = 3; //How many card items visible per a page
+              var totalPages = Math.ceil(numberOfItems / limitPerPage);
+              var paginationSize = 7; //How many page elements visible in the pagination
+              var currentPage;
+            
+              function showPage(whichPage){
+                if(whichPage < 1 || whichPage > totalPages) return false;
+            
+                currentPage = whichPage;
+            
+                $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+            
+                $(".pagination li").slice(1, -1).remove();
+            
+                getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                  $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+                  .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+                  .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+                });
+            
+                $(".previous-page").toggleClass("disable", currentPage === 1);
+                $(".next-page").toggleClass("disable", currentPage === totalPages);
+                return true;
+              }
+            
+              $(".pagination").append(
+                $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("<")),
+                $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text(">"))
+              );
+            
+              $(".card-content").show();
+              showPage(1);
+            
+              $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+                return showPage(+$(this).text());
+              });
+            
+              $(".next-page").on("click", function(){
+                return showPage(currentPage + 1);
+              });
+            
+              $(".previous-page").on("click", function(){
+                return showPage(currentPage - 1);
+              });
+            });
+            </script>
+        <div class="comments-container">
+            <div class="input-comments">
+                <div class="input-comment"> 
+                    <textarea placeholder="Chia sẻ cảm nhận hoặc để lại góp ý cho bài viết này nhé!"name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                
+                <div class="send-comment">
+                    <input type="submit" class="btn endauthor-btn" value="Gửi">
+                </div>
+            </div>
+            <div class="comments-sort">
+                Mới nhất 
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="comment-section">
+                <div class="other-comments">
+                    <div class="user">
+                        <div class="author">
+                            <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                            <div class="author-information">
+                                Quoc Trong
+                                <div>
+                                    21 tháng 10 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-comment">
+                        Ngày xưa, tôi có một cô bạn. Từng quan tâm, từng nghĩ ngợi khi tôi không vui, từng thức cả đêm nhắn cùng tôi những dòng tin nhắn.
+        Ngày đấy, tôi vô tâm. Ngoài cô bạn, tôi còn cả đống quan hệ khó gọi tên khác, hay ho hấp dẫn kích thích. Hơn cả, tôi còn mê điện tử và bóng rổ. Chẳng mấy khi hỏi han quan tâm cô. 
+        Có một câu cô từng nhắn cho tôi, sau này, ngẫm lại, tôi mới đau lòng hiểu.
+        "T rất muốn cậu vui nhưng t sợ t ko làm c vui mãi dc" 
+                    </div>
+                    <div class="comment-info">
+                        <span class="favorite">
+                            <i class="fas fa-chevron-up" id="vote"></i>
+                        </span>
+                        <span class="favorite">
+                            <div>20</div>
+                        </span>
+                        <span class="favorite">
+                            <i class="fas fa-chevron-down" id="vote"></i>
+                        <span class="reply-comment">
+                            Trả lời
+                        </span> 
+                    </div>
+                    <div class="reply">
+    
+                        <div class="user">
+                            <div class="author">
+                                <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                                <div class="author-information">
+                                    Quoc Trong
+                                    <div>
+                                        21 tháng 10 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="comment">
+                            <div class="user-comment">
+                                Ngày xưa, tôi có một cô bạn. Từng quan tâm, từng nghĩ ngợi khi tôi không vui, từng thức cả đêm nhắn cùng tôi những dòng tin nhắn.
+                Ngày đấy, tôi vô tâm. Ngoài cô bạn, tôi còn cả đống quan hệ khó gọi tên khác, hay ho hấp dẫn kích thích. Hơn cả, tôi còn mê điện tử và bóng rổ. Chẳng mấy khi hỏi han quan tâm cô. 
+                Có một câu cô từng nhắn cho tôi, sau này, ngẫm lại, tôi mới đau lòng hiểu.
+                "T rất muốn cậu vui nhưng t sợ t ko làm c vui mãi dc" 
+                            </div>
+                            <div class="comment-info">
+                                <span class="favorite">
+                                    <i class="fas fa-chevron-up" id="vote"></i>
+                                </span>
+                                <span class="favorite">
+                                    <div>20</div>
+                                </span>
+                                <span class="favorite">
+                                    <i class="fas fa-chevron-down" id="vote"></i>
+                                <span class="reply-comment">
+                                    Trả lời
+                                </span> 
+                            </div>
+    
+                        </div>
+                        <div class="reply">
+    
+                            <div class="user">
+                                <div class="author">
+                                    <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                                    <div class="author-information">
+                                        Quoc Trong
+                                        <div>
+                                            21 tháng 10 2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="comment">
+                                <div class="user-comment">
+                                    Ngày xưa, tôi có một cô bạn. Từng quan tâm, từng nghĩ ngợi khi tôi không vui, từng thức cả đêm nhắn cùng tôi những dòng tin nhắn.
+                    Ngày đấy, tôi vô tâm. Ngoài cô bạn, tôi còn cả đống quan hệ khó gọi tên khác, hay ho hấp dẫn kích thích. Hơn cả, tôi còn mê điện tử và bóng rổ. Chẳng mấy khi hỏi han quan tâm cô. 
+                    Có một câu cô từng nhắn cho tôi, sau này, ngẫm lại, tôi mới đau lòng hiểu.
+                    "T rất muốn cậu vui nhưng t sợ t ko làm c vui mãi dc" 
+                                </div>
+                                <div class="comment-info">
+                                    <span class="favorite">
+                                        <i class="fas fa-chevron-up" id="vote"></i>
+                                    </span>
+                                    <span class="favorite">
+                                        <div>20</div>
+                                    </span>
+                                    <span class="favorite">
+                                        <i class="fas fa-chevron-down" id="vote"></i>
+                                    <span class="reply-comment">
+                                        Trả lời
+                                    </span> 
+                                </div>
+        
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="other-comments">
+                        <div class="user">
+                            <div class="author">
+                                <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
+                                <div class="author-information">
+                                    Quoc Trong
+                                    <div>
+                                        21 tháng 10 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-comment">
+                            Ngày xưa, tôi có một cô bạn. Từng quan tâm, từng nghĩ ngợi khi tôi không vui, từng thức cả đêm nhắn cùng tôi những dòng tin nhắn.
+            Ngày đấy, tôi vô tâm. Ngoài cô bạn, tôi còn cả đống quan hệ khó gọi tên khác, hay ho hấp dẫn kích thích. Hơn cả, tôi còn mê điện tử và bóng rổ. Chẳng mấy khi hỏi han quan tâm cô. 
+            Có một câu cô từng nhắn cho tôi, sau này, ngẫm lại, tôi mới đau lòng hiểu.
+            "T rất muốn cậu vui nhưng t sợ t ko làm c vui mãi dc" 
+                        </div>
+                        <div class="comment-info">
+                            <span class="favorite">
+                                <i class="fas fa-chevron-up" id="vote"></i>
+                            </span>
+                            <span class="favorite">
+                                <div>20</div>
+                            </span>
+                            <span class="favorite">
+                                <i class="fas fa-chevron-down" id="vote"></i>
+                            <span class="reply-comment">
+                                Trả lời
+                            </span> 
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer-start">
+                <div class="link-icon">
+                        <span><i class="fab fa-facebook"></i></span>
+                        <span><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <span><i class="fab fa-tiktok"></i></span>
+                </div>
+                <div class="logo">
+                    <span class="logo-info"><img src="./assets/img/logo.png" alt=""></span>
+                    <span class="logo-info">
+                        <h1>Writady</h1>
+                        <div>Cảm hứng đến từ câu chuyện</div>
+                    </span>
+                </div>
+                <div class="company">
+                    <span class="company-info">Feedback</span>
+                    <span class="company-info">Privacy</span>
+                    <span class="company-info">Terms</span>
+                    <span class="company-info">About</span>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-stuff">
+                    <div><i class="fas fa-envelope"></i></div>
+                    <div class="title-middle">MAIL</div>
+                    <div class="detail-middle">writady.blog@gmail.com</div>
+                </div>
+                <div class="footer-stuff">
+                    <div><i class="fas fa-phone-alt"></i></div>
+                    <div class="title-middle">CALL</div>
+                    <div class="detail-middle">+84 568 235 845</div>
+                </div>
+                <div class="footer-stuff">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="title-middle">FIND US</div>
+                    <div class="detail-middle">Ho Chi Minh, Viet Nam</div>
+                </div>
+            </div>
+            <div class="footer-end">
+                Copyright © 2021 
+                <span>STHL & Co</span>
+                , All rights reserved.
+            </div>
+           
+        </div>   
+         <!-- end comments -->
+        <script src="./assets/js/heading.js"></script>
+        <script src="./assets/js/content.js"></script>
+           
+    </body>
+</html>

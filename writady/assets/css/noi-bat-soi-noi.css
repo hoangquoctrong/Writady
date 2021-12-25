@@ -1,0 +1,134 @@
+
+.list-tac-gia{
+    display: block;
+    margin: 1rem 17.5rem;
+}
+
+.thoi-diem{
+    border-bottom: 2px solid rgba(227, 227, 227, 1);
+    padding: 0 381px ;
+}
+
+.moi-thoi-diem{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.nav-tg{
+    position: absolute;
+    margin-top: 6px;
+    background-color: #fff;
+    color: #000;
+    border: 0.1px solid rgba(227, 227, 227, 1);
+}
+
+.nav-tg li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;   
+}
+
+.thoi-diem .nav-tg li{
+    margin: 10px;
+    list-style-type: none;
+    display: none;
+}
+
+.list-tac-gia .bai-viet{
+    display: flex;
+    margin: 40px 50px;
+}
+
+.bai-viet .list-bai-viet{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.bai-viet .science-img{
+    width: 223px;
+    height: 139px;
+    object-fit: none;
+}
+
+.bai-viet .thong-tin{
+    width: auto;
+    flex-direction: column;
+    float: right;
+    display: flex;
+    margin-left: 20px;
+}
+.bai-viet .the-loai{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.bai-viet .thoi-gian{
+    display: inline-block;
+    color: rgba(117, 117, 117, 1);
+    font-size: 12px;
+}
+
+.bai-viet .follow{
+    float: right;
+    line-height: 16px;
+}
+
+.bai-viet .tieu-de{
+    margin-top: 14px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.bai-viet .noi-dung{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.bai-viet .tac-gia{
+    display: flex;
+}
+
+.bai-viet .tac-gia-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center center;
+}
+
+.bai-viet .infor-tac-gia{
+    padding-left: 14px;
+}
+
+.bai-viet .thoi-gian-dang{
+    color: rgba(117, 117, 117, 1);
+    margin-top: 5px;
+}
+
+.bai-viet #tuong-tac{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.bai-viet .tuong-tac{
+    float: right;
+    display: flex;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.bai-viet .tuong-tac-tim,
+.bai-viet .theo-doi-bai{
+    margin-right: 15px;
+}
+
+.bai-viet .the-loai:hover, .bai-viet .tieu-de:hover, .ten-tac-gia:hover, .follow:hover{
+    cursor: pointer;
+    color: #3398D4;
+}

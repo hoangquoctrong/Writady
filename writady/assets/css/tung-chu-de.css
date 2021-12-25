@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#heading .nav li a #header1{
+    background: #3398D4;
+}
+
+/* start genre */
+
+.Genres-field{
+    
+    overflow: hidden;
+    width: 100%;
+    height: 13rem;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+}
+.Genres-field > div{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.Genres-field > div > input{
+    display: block;
+    background: #3398D4;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    columns: #fff;
+    padding: 0.2rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 30px;
+    border: .2rem solid #3398D4;
+   
+}
+.Genres-field > img {
+    width: 100%;
+    height: 13rem;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+/* end genre */
+.list-topic{
+    flex: 5;
+    height: auto;
+    border-right: 2px solid rgba(227, 227, 227, 1);
+}
+
+.list-topic .danh-muc{
+    margin-left: 100px;
+    margin-top: 20px;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 660px;
+    border-bottom: 2px solid rgba(227, 227, 227, 1);
+}
+
+/* begin */
+.list-topic .nav li  {
+    display: inline-block;
+    position: relative;
+}
+.list-topic .nav > li > a {
+    background-color: #fff;
+    color: #000;
+}
+.list-topic .nav li a{
+    color: #000;
+    text-decoration: none ;
+    padding: 0 24px ;
+    line-height: 46px;
+    display: inline-block ;
+}
+
+.list-topic .thoi-diem:hover .subnav{
+    display: block;
+}
+
+.list-topic .nav li:hover a {
+    color: black ;
+    background-color: #fff;
+}
+.list-topic .nav .subnav{
+    display: none;
+    min-width: 160px;
+    padding-top: 10px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    position:absolute;
+    border: 0.1px solid rgba(227, 227, 227, 1);
+}
+.list-topic .nav .subnav > li{
+    width: 100%;
+}
+.list-topic .nav .subnav > li:hover > a  , .list-topic .nav .subnav > li:hover{
+    background:  rgba(162, 208, 235, 1);
+    cursor: pointer;
+}
+/* end */
+
+.list-topic{
+    margin-top: 30px;
+    float: left;
+    width: 61%;
+    height: auto;
+    border-right: 2px solid rgba(227, 227, 227, 1);
+}
+
+.list-topic .bai-viet{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+.bai-viet .list-bai-viet{
+    display: inline-block;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.bai-viet .list-bai-viet .science-img{
+    float: left;
+    width: 35%;
+    height: 160px;
+    object-fit: none;
+}
+
+.bai-viet .thong-tin{
+    width: 65%;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+}
+
+.bai-viet .big-the-loai{
+    padding-bottom: 14px;
+}
+
+.bai-viet .big-the-loai .the-loai{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.bai-viet .big-the-loai .thoi-gian{
+    display: inline-block;
+    color: rgba(117, 117, 117, 1);
+    font-size: 12px;
+}
+
+.bai-viet .big-the-loai .follow
+{
+    float: right;
+    font-size: 20px;
+}
+
+.bai-viet .thong-tin .tieu-de{
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.bai-viet .thong-tin .noi-dung{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.list-topic .tac-gia{
+    display: flex;
+}
+
+.list-topic .bai-viet .tac-gia-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center center;
+}
+
+.list-topic .bai-viet .infor-tac-gia{
+    padding-left: 14px;
+}
+
+.list-topic .bai-viet .thoi-gian-dang{
+    color: rgba(117, 117, 117, 1);
+    margin-top: 5px;
+}
+
+.list-topic .bai-viet #tuong-tac{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.list-topic .bai-viet .tuong-tac{
+    float: right;
+    display: flex;
+    list-style-type: none;
+    line-height: 40px;
+    color: black;
+    font-size: 16px;
+}
+.list-topic .bai-viet .tuong-tac-tim,
+.list-topic .bai-viet .theo-doi-bai{
+    margin-right: 15px;
+}
+
+.tieu-de:hover, .the-loai:hover, .ten-tac-gia:hover {
+    cursor: pointer;
+    color: #3398D4;
+}
+.sidebar-the-loai{
+    margin: 40px 105px 0 40px;
+    width: auto;
+    height: 156px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+.separator{
+    width: 100%;
+    display: flex;
+}
+
+/* sidebar */
+#sidebar{
+    flex: 3;
+    display: flex;
+    flex-direction:column;
+    position: sticky;
+    top: 30px;
+    width: 20%;
+    height: 100%;
+    background: #fff;
+}
+
+.sidebar-the-loai{
+    margin: 40px 105px 0 40px;
+    width: auto;
+    height: 156px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+#sidebar .chu-de{
+    padding: 25px 26px 10px 21px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#sidebar .noi-dung{
+    padding: 21px;
+}
+
+.quan-tam{
+    margin: 30px 105px 0 40px;
+}
+
+.quan-tam .co-the-ban-quan-tam{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.quan-tam .the-loai{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin-right: 7px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgba(242, 242, 242, 1);
+    border: 0;
+}
+
+.de-xuat{
+    margin: 40px 105px 0 40px;
+    width: auto;
+    height: 156px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.de-xuat .de-xuat-cho-ban{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.de-xuat .tac-gia{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.de-xuat .tac-gia-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center center;
+}
+
+.de-xuat .infor-tac-gia{
+    margin-left: 10px;
+}
+
+.de-xuat .thoi-gian-dang{
+    color: rgba(117, 117, 117, 1);
+    margin-top: 5px;
+}
+
+.de-xuat .theo-doi{
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: 91px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgba(242, 242, 242, 1);
+    border: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.de-xuat .theo-doi:hover{
+    cursor: pointer;
+}
+
+.nguoi-moi{
+    margin: 100px 105px 0 40px;
+}
+
+.nguoi-moi .huong-dan-nguoi-moi{
+    font-size: 16px;
+}
+.nguoi-moi .huong-dan-nguoi-moi:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nguoi-moi .huong-dan{
+    display: flex;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.nguoi-moi .huong-dan a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+}

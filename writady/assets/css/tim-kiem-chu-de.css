@@ -1,0 +1,61 @@
+
+.list-chu-de{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 319px;
+    margin-right: 319px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.list-chu-de .chu-de{
+    margin-bottom: 32px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.list-chu-de .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 110px;
+    border: 0.5px solid #C4C4C4;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 13px;
+    object-fit: none;
+}
+
+.list-chu-de .the-loai{
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.list-chu-de .follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    margin: 0px 30px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.list-chu-de .followed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    margin: 0px 30px;
+    color: #fff;
+    background: #3398D4;
+    border: 1px solid #3398D4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
