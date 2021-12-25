@@ -12,106 +12,119 @@
     <link rel="icon" href="./assets/img/logo.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./assets/css/card-scroller.css">
 <script>
 $(document).ready(function(){
    
-   $('#chuyen-muc').load("./baiviet/kid/tatca.html");
+   $('#contentex').load("./baiviet/kid/tatca.html");
 
 });
 </script>
   </head>
   <body>
-      <div class="container-fluid">
-          
-      </div>
         <!--begin heading -->
         <div>
-            <div id="heading">
-                <img class="writady-img" src="./assets/img/writady.png" alt="">
-                <a href="#"><div id="writady">Writady</div></a>
-                <ul class="nav">
-                    <li><a href="" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
-                    <li><a href="" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
-                    <li><a href="" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
-                </ul>
-                <div id="icon-btns">
-                    <ul class="icon-btn">
-                        <li><i onclick="displaySearch()" class="search-icon ti-search" id="search-btn"></i></li>
-                        <li onclick="displayNotify()">
-                            <div>
-                                <i class="notify-icon ti-bell"></i>
-                                <div class="ping-number">2</div>
-                                
-                            </div></li>
-                        <li><i class="avatar-icon"></i></li>
-                        <div class="notify-box" id="notify" >
-                            <h2>
-                                Thông báo
-                                <div>
-                                    <input onclick="AllNotify()" type="submit" id="AllNotify" class="btn" value="Tất cả">
-                                    <input onclick="NotRead()" type="submit" id="NotRead" class="btn" value="Chưa đọc">
-                                </div>
+          <!--begin heading -->
+          <div>
+           <div id="heading">
+               <img class="writady-img" src="./assets/img/writady.png" alt="">
+               <a href="./home.html"><div id="writady">Writady</div></a>
+               <ul class="nav">
+                   <li><a href="./home.html" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
+                   <li><a href="./chu-de.html" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
+                   <li><a href="./noi-bat.html" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
+               </ul>
+               <div id="icon-btns">
+                   <ul class="icon-btn">
+                       <li><i onclick="displaySearch()" class="search-icon ti-search" id="search-btn"></i></li>
+                       <li onclick="displayNotify()">
+                           <div>
+                               <i class="notify-icon ti-bell"></i>
+                               <div class="ping-number">2</div>
                                
-                            </h2>
-                            
-                            <div class="notifi-item">
-                                <img src="./assets/img/avatar.jpg" alt="img">
-                                <div class="text">
-                                    <h4>"Nỗi đau của chàng Werther" - Khi tình yêu trở thành niềm đam mê cực đoan</h4>
-                                    <p>10 phút trước</p>
-                                </div> 
-                                <div class="not-read">
-                                    
-                                </div>
-                            </div>
-            
-                            <div class="notifi-item readed" id="readed">
-                                <img src="./assets/img/avatar.jpg" alt="img">
-                                <div class="text">
-                                    <h4>Home Alone: Bộ phim "yêu lại" mỗi mùa Giáng Sinh</h4>
-                                    <p>16 phút trước</p>
-                                </div> 
-                                <div class="read">
-    
-                                </div>
-                            </div>
-            
-                            <div class="notifi-item">
-                                <img src="./assets/img/avatar.jpg" alt="img">
-                                <div class="text">
-                                    <h4>Các mối quan hệ của chúng ta đổ vỡ bởi phần lớn mọi người giao tiếp với nhau...</h4>
-                                    <p>30 phút trước</p>
-                                </div> 
-                                <div class="not-read">
-                                    
-                                </div>
-                            </div>
-            
-                            <div class="notifi-item readed" >
-                                <img src="./assets/img/avatar.jpg" alt="img">
-                                <div class="text">
-                                    <h4>[Review Sách] Kafka Bên Bờ Biển- Logic và Phi logic</h4>
-                                    <p>37 phút trước</p>
-                                </div> 
-                                <div class="read">
-    
-                                </div>
-                            </div>
-            
-        
-                        </div>
-                    </ul>
-                </div>
-                
-                <div id="write-text">Viết bài</div>        
-            </div>
-            <form action="" class="search-bar-container" id="search-container">
-                <i onclick="displayHeading()" class="fas fa-arrow-left" ></i>
-                <input type="search" id="search-bar" placeholder="Tìm kiếm ...">
-                <i class="fas fa-search"></i>
-            </form>
-        </div>
+                           </div></li>
+                       <li onclick="displayUser()"><i class="avatar-icon"></i></li>
+                       <div class="notify-box" id="notify" >
+                           <h2>
+                               Thông báo
+                               <div>
+                                   <input onclick="AllNotify()" type="submit" id="AllNotify" class="btn" value="Tất cả">
+                                   <input onclick="NotRead()" type="submit" id="NotRead" class="btn" value="Chưa đọc">
+                               </div>
+                              
+                           </h2>
+                           
+                           <div class="notifi-item" onclick="toContent()">
+                               <img src="./assets/img/avatar.jpg" alt="img">
+                               <div class="text">
+                                   <h4>"Nỗi đau của chàng Werther" - Khi tình yêu trở thành niềm đam mê cực đoan</h4>
+                                   <p>10 phút trước</p>
+                               </div> 
+                               <div class="not-read">
+                                   
+                               </div>
+                           </div>
+           
+                           <div class="notifi-item readed" id="readed" onclick="toContent()">
+                               <img src="./assets/img/avatar.jpg" alt="img">
+                               <div class="text">
+                                   <h4>Home Alone: Bộ phim "yêu lại" mỗi mùa Giáng Sinh</h4>
+                                   <p>16 phút trước</p>
+                               </div> 
+                               <div class="read">
+   
+                               </div>
+                           </div>
+           
+                           <div class="notifi-item" onclick="toContent()">
+                               <img src="./assets/img/avatar.jpg" alt="img">
+                               <div class="text">
+                                   <h4>Các mối quan hệ của chúng ta đổ vỡ bởi phần lớn mọi người giao tiếp với nhau...</h4>
+                                   <p>30 phút trước</p>
+                               </div> 
+                               <div class="not-read">
+                                   
+                               </div>
+                           </div>
+           
+                           <div class="notifi-item readed" onclick="toContent()">
+                               <img src="./assets/img/avatar.jpg" alt="img">
+                               <div class="text">
+                                   <h4>[Review Sách] Kafka Bên Bờ Biển- Logic và Phi logic</h4>
+                                   <p>37 phút trước</p>
+                               </div> 
+                               <div class="read">
+   
+                               </div>
+                           </div>
+                       </div>
+                       <div class="user-box" id="user">
+                           <div class="user-item" onclick="toProfile()">
+                               <img src="./assets/img/avatar.jpg" alt="img">
+                               <div class="text">
+                                   <h4>Long Trần</h4>
+                                   <p>Trang cá nhân</p>
+                               </div>  
+                               </div>
+                           <div class="separate-line-user"></div>
+                           <div class="user-item" onclick="toGuest()">
+                               <i class="fas fa-sign-out-alt"></i>
+                               Đăng xuất
+   
+                               </div>
+                           </div>
+                       </div>
+                   </ul>
+                   <div id="write-text" onclick="toWriting()">Viết bài</div>  
+               </div>
+               
+                    
+           </div>
+           <form action="" class="search-bar-container" id="search-container">
+               <i onclick="displayHeading()" class="fas fa-arrow-left" ></i>
+               <input type="search" id="search-bar" placeholder="Tìm kiếm ...">
+               <i class="fas fa-search" onclick="toSearch()"></i>
+           </form>
+       </div>
   <section id="home">
     <center>
     <img src="./png/tree.png" alt="" width="1340" height="400" class="tree" style="border-radius: 25px; position: relative; box-shadow: 0 0px 25px rgb(1 1 1 / 40%);"> 
@@ -296,26 +309,26 @@ $(document).ready(function(){
     </script>
 
     <div class="bai-viet-menu">
-        <div class="menu-info">
+        <div class="menu-info with-name" onclick="loadBaivietTatca()">
             Tất cả
             <div class="underline" id="underline1"></div>
         </div>
         <div class="menu-info">
             -
         </div>
-        <div class="menu-info">
+        <div class="menu-info with-name" onclick="loadBaivietChuyenmuc()">
             Chuyên mục
             <div class="underline" id="underline2"></div>
         </div>
         <div class="menu-info">
             -
         </div>
-        <div class="menu-info">
+        <div class="menu-info with-name" onclick="loadBaivietSoinoi()">
             Sôi nổi
             <div class="underline" id="underline3"></div>
         </div>
     </div>
-    <div id="chuyen-muc">
+    <div id="contentex">
 
     </div>
   <div class="footer">
@@ -364,7 +377,8 @@ $(document).ready(function(){
     </div>
    
 </div>   
-  <script src="./assets/js/heading.js"></script>
+<script src="./assets/js/heading.js"></script>
+<script src="./assets/js/navigation.js"></script>
   <script src="./assets/js/profile.js"></script>
   </body>
 </html>

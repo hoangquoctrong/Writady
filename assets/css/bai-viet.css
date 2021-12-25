@@ -14,7 +14,6 @@ display: none;
 body{
   color: #fff;
   position: relative;
-  
 }
 
 html {
@@ -31,7 +30,7 @@ overflow-x:hidden;
 .stuff{
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 1000px;
 }
 
 .card-icon {
@@ -45,4 +44,11 @@ span {
 
 .icon {
   margin-top: 4px;
+}
+.card-image-ex img, .card-icon img{
+  width: 400px;
+}
+
+.card-image-ex .image-overlay:hover{
+  cursor: pointer;
 }

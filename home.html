@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="./assets/css/heading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/icon/themify-icons/themify-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body>
+    <div>
        <!--begin heading -->
        <div>
         <div id="heading">
             <img class="writady-img" src="./assets/img/writady.png" alt="">
-            <a href="#"><div id="writady">Writady</div></a>
+            <a href="./home.html"><div id="writady">Writady</div></a>
             <ul class="nav">
-                <li><a href="" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
-                <li><a href="" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
-                <li><a href="" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
+                <li><a href="./home.html" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
+                <li><a href="./chu-de.html" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
+                <li><a href="./noi-bat.html" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
             </ul>
             <div id="icon-btns">
                 <ul class="icon-btn">
@@ -33,7 +35,7 @@
                             <div class="ping-number">2</div>
                             
                         </div></li>
-                    <li><i class="avatar-icon"></i></li>
+                    <li onclick="displayUser()"><i class="avatar-icon"></i></li>
                     <div class="notify-box" id="notify" >
                         <h2>
                             Thông báo
@@ -44,7 +46,7 @@
                            
                         </h2>
                         
-                        <div class="notifi-item">
+                        <div class="notifi-item" onclick="toContent()">
                             <img src="./assets/img/avatar.jpg" alt="img">
                             <div class="text">
                                 <h4>"Nỗi đau của chàng Werther" - Khi tình yêu trở thành niềm đam mê cực đoan</h4>
@@ -55,7 +57,7 @@
                             </div>
                         </div>
         
-                        <div class="notifi-item readed" id="readed">
+                        <div class="notifi-item readed" id="readed" onclick="toContent()">
                             <img src="./assets/img/avatar.jpg" alt="img">
                             <div class="text">
                                 <h4>Home Alone: Bộ phim "yêu lại" mỗi mùa Giáng Sinh</h4>
@@ -66,7 +68,7 @@
                             </div>
                         </div>
         
-                        <div class="notifi-item">
+                        <div class="notifi-item" onclick="toContent()">
                             <img src="./assets/img/avatar.jpg" alt="img">
                             <div class="text">
                                 <h4>Các mối quan hệ của chúng ta đổ vỡ bởi phần lớn mọi người giao tiếp với nhau...</h4>
@@ -77,7 +79,7 @@
                             </div>
                         </div>
         
-                        <div class="notifi-item readed" >
+                        <div class="notifi-item readed" onclick="toContent()">
                             <img src="./assets/img/avatar.jpg" alt="img">
                             <div class="text">
                                 <h4>[Review Sách] Kafka Bên Bờ Biển- Logic và Phi logic</h4>
@@ -87,18 +89,33 @@
 
                             </div>
                         </div>
-        
-    
+                    </div>
+                    <div class="user-box" id="user">
+                        <div class="user-item" onclick="toProfile()">
+                            <img src="./assets/img/avatar.jpg" alt="img">
+                            <div class="text">
+                                <h4>Long Trần</h4>
+                                <p>Trang cá nhân</p>
+                            </div>  
+                            </div>
+                        <div class="separate-line-user"></div>
+                        <div class="user-item" onclick="toGuest()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Đăng xuất
+
+                            </div>
+                        </div>
                     </div>
                 </ul>
+                <div id="write-text" onclick="toWriting()">Viết bài</div>  
             </div>
             
-            <div id="write-text">Viết bài</div>        
+                 
         </div>
         <form action="" class="search-bar-container" id="search-container">
             <i onclick="displayHeading()" class="fas fa-arrow-left" ></i>
             <input type="search" id="search-bar" placeholder="Tìm kiếm ...">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" onclick="toSearch()"></i>
         </form>
     </div>
     <div class="middle-part">
@@ -198,41 +215,178 @@
             </div>
     
             <div class="spanner-tieu-de">Bài viết đề cử</div>
-            <div class="spanner">
-                <a href="#" class="prev">
-                    <i class="ti-angle-left"></i>
-                </a>
-                <a href="#" class="next">
-                    <i class="ti-angle-right"></i>
-                </a>
-                <div class="bai-viet-dau">
-                    <img src="./assets/img/science.jpg" alt="" class="science-img">
-                    <div class="the-loai">Chuyện trò - Tâm sự</div>
-                    <div class="tieu-de">Lần đầu nhận nuôi mèo</div>
-                    <div class="tac-gia">Long Tran</div>
-                </div>
-    
-                <div class="bai-viet">
-                    <img src="./assets/img/science.jpg" alt="" class="science-img">
-                    <div class="the-loai">Chuyện trò - Tâm sự</div>
-                    <div class="tieu-de">Lần đầu nhận nuôi mèo</div>
-                    <div class="tac-gia">Long Tran</div>
-                </div>
-    
-                <div class="bai-viet">
-                    <img src="./assets/img/science.jpg" alt="" class="science-img">
-                    <div class="the-loai">Chuyện trò - Tâm sự</div>
-                    <div class="tieu-de">Lần đầu nhận nuôi mèo</div>
-                    <div class="tac-gia">Long Tran</div>
-                </div>
-    
-                <div class="bai-viet-cuoi">
-                    <img src="./assets/img/science.jpg" alt="" class="science-img">
-                    <div class="the-loai">Chuyện trò - Tâm sự</div>
-                    <div class="tieu-de">Lần đầu nhận nuôi mèo</div>
-                    <div class="tac-gia">Long Tran</div>
+            <div class="card-container">
+            
+                <div class="card-content" style="display: none">
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                    <div class="card-info">
+                      <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                      <p>Lần đầu nhận nuôi mèo</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì? </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Lần đầu nhận nuôi mèo</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Lần đầu nhận nuôi mèo</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+                    <div class="card-info">
+                        <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+                        <p>Lần đầu nhận nuôi mèo</p>
+                    </div>
+                  </div>
+                  <div class="pagination">
+                    <li class="page-item previous-page disable"><a class="page-link" href="#home1"><</a></li>
+                    <li class="page-item current-page active"><a class="page-link" href="#home1">1</a></li>
+                    <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+                    <li class="page-item current-page"><a class="page-link" href="#home1">5</a></li>
+                    <li class="page-item current-page"><a class="page-link" href="#home1">6</a></li>
+                    <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+                    <li class="page-item current-page"><a class="page-link" href="#home1">10</a></li>
+                    <li style="position: relative; right: 100px;" class="page-item next-page"><a class="page-link" href="#home1">></a></li>
+                  </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                function getPageList(totalPages, page, maxLength){
+                  function range(start, end){
+                    return Array.from(Array(end - start + 1), (_, i) => i + start);
+                  }
+                
+                  var sideWidth = maxLength < 9 ? 1 : 2;
+                  var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+                  var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+                
+                  if(totalPages <= maxLength){
+                    return range(1, totalPages);
+                  }
+                
+                  if(page <= maxLength - sideWidth - 1 - rightWidth){
+                    return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+                  }
+                
+                  if(page >= totalPages - sideWidth - 1 - rightWidth){
+                    return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+                  }
+                
+                  return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+                }
+                
+                $(function(){
+                  var numberOfItems = $(".card-content .card").length;
+                  var limitPerPage = 4; //How many card items visible per a page
+                  var totalPages = Math.ceil(numberOfItems / limitPerPage);
+                  var paginationSize = 7; //How many page elements visible in the pagination
+                  var currentPage;
+                
+                  function showPage(whichPage){
+                    if(whichPage < 1 || whichPage > totalPages) return false;
+                
+                    currentPage = whichPage;
+                
+                    $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+                
+                    $(".pagination li").slice(1, -1).remove();
+                
+                    getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                      $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+                      .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+                      .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+                    });
+                
+                    $(".previous-page").toggleClass("disable", currentPage === 1);
+                    $(".next-page").toggleClass("disable", currentPage === totalPages);
+                    return true;
+                  }
+                
+                  $(".pagination").append(
+                    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("<")),
+                    $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text(">"))
+                  );
+                
+                  $(".card-content").show();
+                  showPage(1);
+                
+                  $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+                    return showPage(+$(this).text());
+                  });
+                
+                  $(".next-page").on("click", function(){
+                    return showPage(currentPage + 1);
+                  });
+                
+                  $(".previous-page").on("click", function(){
+                    return showPage(currentPage - 1);
+                  });
+                });
+                </script>
             <div class="separator">
                 <div class="list-topic">
                     <div class="chu-de">Chủ đề của bạn</div>
@@ -657,6 +811,7 @@
         </div>
         <!-- end content -->
         <script src="./assets/js/heading.js"></script>
+        <script src="./assets/js/navigation.js"></script>
        
     </div>
 </body>

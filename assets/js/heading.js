@@ -38,11 +38,14 @@ function fillEBook(){
   z.style.background = "none";
   g.style.background = "#3398D4";
 }
-
+var notify = document.getElementById("notify");
+var user = document.getElementById("user");
 
 
 
 function displaySearch(){
+  user.style.display = "none"
+  notify.style.display = "none";
   var x = document.getElementById("heading");
   var y = document.getElementById("search-container");
   x.style.display = "none";
@@ -55,14 +58,29 @@ function displayHeading(){
   y.style.display = "none";
   
 }
+
 function displayNotify() {
-    var x = document.getElementById("notify");
-    if (x.style.display == "none") {
-         x.style.display = "block";
-    } else{
-         x.style.display = "none";
+  user.style.display = "none"
+    if (notify.style.display == "none") {
+      notify.style.display = "block";
+    } 
+    else
+    {
+      notify.style.display = "none";
     }
   }
+  function displayUser() {
+    notify.style.display = "none";
+    if (user.style.display == "none") 
+    {
+      user.style.display = "block";
+    } 
+    else
+    {
+      user.style.display = "none";
+    }
+  }
+
   function AllNotify(){
     var x = document.getElementById("AllNotify");
     var y = document.getElementById("NotRead");
@@ -105,4 +123,4 @@ function displayNotify() {
     $('#content').load("soinoi.html");
   });
   }
-  
+
