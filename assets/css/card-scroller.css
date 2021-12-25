@@ -1,0 +1,139 @@
+
+.card-container{
+    height: 50vh;
+    position: relative;
+    width: 900px;
+    margin: 1rem 20rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border: 0.5px solid #000000; ;
+    border-radius: 10px;
+  }
+  
+  .card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .card{
+    position: relative;
+    background: #f0f0f0;
+    max-width: 325px;
+    width: 250px;
+    margin: 20px;
+    height: auto;
+    overflow: hidden;
+    border: solid #f0f0f0 solid;
+  }
+  
+  .card-image{
+    max-height: 200px;
+  }
+  
+  .card-image img{
+    max-width: 100%;
+    max-height: 150px;
+    width: 250px;
+    height: auto;
+    border-radius: 7px;
+  }
+  
+  .card-info{
+    position: relative;
+    color: #222;
+    height: 4.2rem;
+  }
+  
+  .card-info h6{
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+  
+  .card-info p{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+  }
+  
+  .card-info p:hover , .card-info h6:hover{
+    color: #3398D4;
+    cursor: pointer;
+  }
+  .card-image img:hover{
+    cursor: pointer;
+  }
+
+  .pagination{
+    text-align: center;
+    user-select: none;
+  }
+  
+  .pagination li{
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+  }
+  
+  .pagination li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 45px;
+  }
+  
+  .previous-page, .next-page{
+    background: #555454;
+    width: 50px;
+    vertical-align: middle;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 40px;
+  }
+  
+  .previous-page {
+    position: relative;
+    right: 344px;
+    bottom: 176px;
+  }
+  
+  .next-page {
+    position: relative;
+    left: 344px;
+    bottom: 176px;
+  }
+  
+  
+  .previous-page:hover{
+    transform: translateX(-5px);
+  }
+  
+  .next-page:hover{
+    transform: translateX(5px);
+  }
+  
+  .current-page, .dots{
+    background: #484040;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .active{
+    background: #0AB1CE;
+  }
+  
+  .disable{
+    background: #d6d6d6;
+  }

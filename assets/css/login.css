@@ -1,0 +1,446 @@
+body{
+  background-color: #f6f6f6;
+}.web-logo{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 198px;
+  top: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight:bold;
+}
+
+.welcome-txt{
+  position: absolute;
+  width: 237px;
+  height: 72px;
+  left: 200px;
+  top: 295px;
+  
+  font-family: 'Lora';
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 72px;
+}
+.quote{
+  position: absolute;
+  width: 279px;
+  height: 26px;
+  left: 186px;
+  top: 380px;
+  
+  font-family: Lora;
+  font-style: italic;
+  font-size: 20px;
+  
+  color: #000000;
+}
+.line-text{
+  position: absolute;
+  width: 245px;
+  left: 186px;
+  top: 450px;
+  left: 186;
+  height: 8px;
+  border-bottom: 0.5px solid #8E8D8D;
+  text-align: center;
+}
+.line-text > span{
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Roboto', Helvetica,sans-serif;
+  font-style: normal;
+  background:#f6f6f6;
+  padding: 0 10px;
+}
+.abstract-icon{
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 235px;
+  top: 516px;
+  display: flex;
+  align-items: center;
+}
+.facebook-icon, .yt-icon, .spotify-icon{
+  flex: 1;
+}
+.company-link{
+  position: absolute;
+  width: 300px;
+  height: 19px;
+  left: 180px;
+  top: 650px;
+  display: flex;
+  align-items: center;
+}
+.company-link > span > a{
+  font-family: 'Lora';
+  font-size: 15px;
+}
+.company-link > span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.about-txt{
+  flex: 2
+}
+.privacy-txt{
+flex: 3
+}
+.contact-txt{
+flex: 2
+}
+
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+.sign-in-form, .sign-up-form, .verify-form{
+  position: absolute;
+  width: 454px;
+  height: 615px;
+  right: 4rem;
+  top: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
+/*Đăng nhập*/
+.title{
+
+  position: relative;
+  margin-top: 10%;
+  width: 454px;
+  height: 41px;
+  text-align: center;
+  font-family: 'Roboto', Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  color: #050000;
+}
+.register{
+  flex-direction: row;
+  position: relative;
+  
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+.register-margin{
+  width: 116;
+}
+.register-button
+{
+  width: 70px;
+  height: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  color: #18A0FB;
+}
+.register-button:hover{
+  cursor: pointer;
+}
+input[type="text"], input[type="password"] {  
+  padding-left: 10px;
+  /* Firefox, Chrome, Opera */ 
+
+} 
+.input-field{
+  margin-top: 5%;
+  width: 454px;
+  align-items: center;
+}
+.input-field > input{
+  margin-left: 12%;
+  width: 331px;
+  height: 50px;
+  box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0.5px solid #00659E;
+  background-color: #F6FFFD;
+}
+.option-div{
+  margin-top: 4%;
+  display: flex;
+}
+.option-div > .memorize-container{
+  width: auto;
+  margin-left: 12%;
+  display: flex;
+}
+.memorize-container > label{
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  margin-left: 0.5em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.memorize-container input{
+  background-color: red;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+input[type="checkbox"]{
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #d5d5d5;
+  border-radius: 3px;
+  cursor: pointer;
+  align-items: center;
+  justify-self: center;
+}
+input[type="checkbox"]:after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 16px;
+  color: blue;
+  display: none;
+}
+input[type="checkbox"]:hover{
+  background-color: #DDF8FC;
+}
+input[type="checkbox"]:checked{
+  background-color: #DDF8FC;
+}
+input[type="checkbox"]:checked::after{
+  display: block;
+}
+.option-div > .forgot-password{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+margin-left: 30.3%;
+text-decoration: none;
+
+align-items: center;
+text-align: center;
+font-weight: bolder;
+
+color: #18A0FB;
+}
+.btn-solid{
+  margin-top: 4%;
+  width: 341px;
+  height: 50px;
+  margin-left: 12%;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  background-color: #3398D4;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-solid:hover{
+  cursor: pointer;
+}
+.or{
+  margin-top: 4%;
+  position: relative;
+  width: 338px;
+  margin-left: 12%;
+  text-align: center;
+  height: 8px;
+  border-bottom: 0.5px solid #8E8D8D;
+}
+.or > span{
+  font-size: 16px;
+  color: #666666;
+  font-family: 'Roboto', Helvetica,sans-serif;
+  font-style: normal;
+  background:#FFFFFF;
+  padding: 0 10px;
+}
+.btn{
+  margin-left: 12%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  width: 341px;
+  height: 50px;
+  border: 1px solid #09B2C9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.button_icon > img, .button_text{
+  flex: 1;
+}
+.button_icon > img{
+  width: 30px;
+  height: 30px;
+}
+.button_text{
+
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  text-align: center;
+}
+/*Đăng ký*/
+.title-register{
+  position: relative;
+  width: 454px;
+  height: 35px;
+  text-align: center;
+  font-family: 'Roboto', Helvetica,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  font-size: 35px;
+  color: #050000;
+}
+.to-login{
+  flex-direction: row;
+  position: relative;
+  
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+.register-name{
+  
+  width: 454px;
+  margin-top: 5%;
+  display: flex;
+}
+.register-name > .input-name-1{
+  margin-left: 12%;
+  align-items: center;
+}
+.register-name > .input-name-2{
+  margin-left: 6%;
+  align-items: center;
+}
+
+.input-name-1 > input{
+  width: 140px;
+  height: 40px;
+  box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0.5px solid #00659E;
+  background-color: #F6FFFD;
+}
+.input-name-2 > input{
+  width: 150px;
+  height: 40px;
+  box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0.5px solid #00659E;
+  background-color: #F6FFFD;
+}.input-field-2{
+  margin-top: 4%;
+  width: 454px;
+  align-items: center;
+}
+.input-field-2 > input{
+  margin-left: 12%;
+  width: 331px;
+  height: 40px;
+  box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  font-size: 16px;
+  border: 0.5px solid #00659E;
+  background-color: #F6FFFD;
+}
+.date-of-birth{
+  display: flex;
+  margin-left: 12%;
+  width: 341px;
+}
+.date-of-birth > div{
+  flex : 1;
+}
+.date-of-birth > select{
+  flex: 6;
+}
+select{
+  appearance: none;
+  font-family: Roboto,sans-serif;
+  box-shadow: inset 1px rgba(0, 0, 0, 0.25);
+  padding-left: 10px;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 16px;
+  border: 0.5px solid #00659E;
+  background-color: #F6FFFD;
+}
+.gender-group{
+  margin-top: 2%;
+  display: flex;
+  margin-left: 12%;
+  width: 351px;
+  align-content: center;
+}
+.radio{
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+  flex: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width:1200px){
+
+  .sign-in-form, .sign-up-form, .verify-form{
+    right: auto;
+    margin: 0 25%;
+  }
+  .left-part{
+    display: none;
+  }
+}
+
+@media (max-width:991px){
+  .sign-in-form, .sign-up-form, .verify-form{
+    right: auto;
+    margin: 0 17%;
+  }
+}
+
+@media (max-width:768px){
+  .sign-in-form, .sign-up-form, .verify-form{
+    right: auto;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width:450px){
+  .sign-in-form, .sign-up-form, .verify-form{
+    right: auto;
+    margin: 0 0;
+  }
+}

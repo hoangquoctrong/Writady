@@ -1,0 +1,72 @@
+#container{
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tieu-de{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 37px;
+    margin-top: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading .nav li a #header3{
+    background: #3398D4;
+}
+.tieu-de .text-noi-bat{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.tieu-de .noi-bat-icon{
+    object-fit: none;
+    margin-right: 10px;
+}
+.lua-chon{
+    display: flex;
+    flex-direction: row;
+}
+
+.lua-chon .nguoi-dung{
+    margin: 0 15px;
+    padding: 8px 13px;
+    font-size: 20px;
+    color: #fff;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.lua-chon .soi-noi,
+.lua-chon .hang-dau{
+    margin: 0 15px;
+    padding: 8px 13px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.lua-chon .nguoi-dung:hover,
+.lua-chon .soi-noi:hover,
+.lua-chon .hang-dau:hover{
+    cursor: pointer;
+}
+#content{
+    width: 100%;
+    display: flex;
+}
+
+.separate-line{
+    width: 80%;
+    height: 1rem;
+    border-bottom: 0.2px solid #E3E3E3;
+    text-align: center;
+}

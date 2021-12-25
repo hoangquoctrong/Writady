@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>writady</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/heading.css">
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <link rel="icon" href="./assets/img/logo.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/card-scroller.css">
+<script>
+$(document).ready(function(){
+   
+   $('#chuyen-muc').load("./baiviet/kid/tatca.html");
+
+});
+</script>
+  </head>
+  <body>
+      <div class="container-fluid">
+          
+      </div>
+        <!--begin heading -->
+        <div>
+            <div id="heading">
+                <img class="writady-img" src="./assets/img/writady.png" alt="">
+                <a href="#"><div id="writady">Writady</div></a>
+                <ul class="nav">
+                    <li><a href="" onclick="fillHome()">TRANG CHỦ <div id="header1"></div></a></li>
+                    <li><a href="" onclick="fillChuDe()">CHỦ ĐỀ<div id="header2"></div></a></li>
+                    <li><a href="" onclick="fillNoiBat()">NỔI BẬT <div id="header3"></div></a></li>
+                </ul>
+                <div id="icon-btns">
+                    <ul class="icon-btn">
+                        <li><i onclick="displaySearch()" class="search-icon ti-search" id="search-btn"></i></li>
+                        <li onclick="displayNotify()">
+                            <div>
+                                <i class="notify-icon ti-bell"></i>
+                                <div class="ping-number">2</div>
+                                
+                            </div></li>
+                        <li><i class="avatar-icon"></i></li>
+                        <div class="notify-box" id="notify" >
+                            <h2>
+                                Thông báo
+                                <div>
+                                    <input onclick="AllNotify()" type="submit" id="AllNotify" class="btn" value="Tất cả">
+                                    <input onclick="NotRead()" type="submit" id="NotRead" class="btn" value="Chưa đọc">
+                                </div>
+                               
+                            </h2>
+                            
+                            <div class="notifi-item">
+                                <img src="./assets/img/avatar.jpg" alt="img">
+                                <div class="text">
+                                    <h4>"Nỗi đau của chàng Werther" - Khi tình yêu trở thành niềm đam mê cực đoan</h4>
+                                    <p>10 phút trước</p>
+                                </div> 
+                                <div class="not-read">
+                                    
+                                </div>
+                            </div>
+            
+                            <div class="notifi-item readed" id="readed">
+                                <img src="./assets/img/avatar.jpg" alt="img">
+                                <div class="text">
+                                    <h4>Home Alone: Bộ phim "yêu lại" mỗi mùa Giáng Sinh</h4>
+                                    <p>16 phút trước</p>
+                                </div> 
+                                <div class="read">
+    
+                                </div>
+                            </div>
+            
+                            <div class="notifi-item">
+                                <img src="./assets/img/avatar.jpg" alt="img">
+                                <div class="text">
+                                    <h4>Các mối quan hệ của chúng ta đổ vỡ bởi phần lớn mọi người giao tiếp với nhau...</h4>
+                                    <p>30 phút trước</p>
+                                </div> 
+                                <div class="not-read">
+                                    
+                                </div>
+                            </div>
+            
+                            <div class="notifi-item readed" >
+                                <img src="./assets/img/avatar.jpg" alt="img">
+                                <div class="text">
+                                    <h4>[Review Sách] Kafka Bên Bờ Biển- Logic và Phi logic</h4>
+                                    <p>37 phút trước</p>
+                                </div> 
+                                <div class="read">
+    
+                                </div>
+                            </div>
+            
+        
+                        </div>
+                    </ul>
+                </div>
+                
+                <div id="write-text">Viết bài</div>        
+            </div>
+            <form action="" class="search-bar-container" id="search-container">
+                <i onclick="displayHeading()" class="fas fa-arrow-left" ></i>
+                <input type="search" id="search-bar" placeholder="Tìm kiếm ...">
+                <i class="fas fa-search"></i>
+            </form>
+        </div>
+  <section id="home">
+    <center>
+    <img src="./png/tree.png" alt="" width="1340" height="400" class="tree" style="border-radius: 25px; position: relative; box-shadow: 0 0px 25px rgb(1 1 1 / 40%);"> 
+    </center>
+    <img src="./assets/img/profile-avatar.png" alt="" width="300" height="400" style="position: relative; left: 150px;bottom: 40px;border-radius: 10px;">
+    <div style="position: relative; bottom: 350px; left: 500px;">
+    <h1 style="color: black;">Chào mừng bạn!</h1>
+    <span style="color: black; font-size: 50px;font-weight: 400;">Tôi là <span style="font-weight: bolder;">Hoàng</span></span>
+    <h1 style="color: black; font-weight:bolder; font-size: 25px">Một nhà văn</h1> <br>
+    <p style="color: black">Một người yêu thích lịch sử Mỹ. Hãy cùng tôi khám phá những điều thú vị trong chủ đề này nhé!</p>
+    <span style="word-spacing: 10px;">
+        <img src="./png/facebook.png" alt="" height="30" style="border-radius: 50px">
+        <img src="./png/spotify.png" alt="" width="30" height="30" style="border-radius: 50px">
+        <img src="./png/youtube.png" alt="" width="30" height="30" style="border-radius: 50px">
+    </span>
+    <h1 style="color: black;">Tác giả của tháng</h1>
+    <div class="profile-information">
+        <div class="profile-info"><div class="Followers info-name">Followers</div><div class="Followers number">2000</div></div>
+        <div class="profile-info"><div class="Following info-name">Following</div><div class="Followers number">10</div></div>
+        <div class="profile-info"><div class="Likes info-name">Likes</div><div class="Followers number">3000</div></div>
+    </div>
+   
+    </div>
+  </section>
+
+  <div class="Noi-bat-word">
+      Nổi bật
+  </div>
+
+
+
+  <div class="card-container">
+            
+    <div class="card-content" style="display: none">
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+        <div class="card-info">
+          <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+          <p>Lần đầu nhận nuôi mèo</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì? </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Lần đầu nhận nuôi mèo</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat3.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Bạn Sẽ Dành 80.000 Giờ Cuộc Đời Mình Cho Công Việc Gì?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat2.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Đàn ông “làm nũng” sẽ là một thứ gia vị ngọt ngào thú vị cho tình yêu</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="./assets/img/cat1.png" alt=""></div>
+        <div class="card-info">
+            <h6>CHUYỆN TRÒ - TÂM SỰ</h6>
+            <p>Lần đầu nhận nuôi mèo</p>
+        </div>
+      </div>
+      <div class="pagination">
+        <li class="page-item previous-page disable"><a class="page-link" href="#home1"><</a></li>
+        <li class="page-item current-page active"><a class="page-link" href="#home1">1</a></li>
+        <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#home1">5</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#home1">6</a></li>
+        <li class="page-item dots"><a class="page-link" href="#home1">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#home1">10</a></li>
+        <li style="position: relative; right: 100px;" class="page-item next-page"><a class="page-link" href="#home1">></a></li>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function getPageList(totalPages, page, maxLength){
+      function range(start, end){
+        return Array.from(Array(end - start + 1), (_, i) => i + start);
+      }
+    
+      var sideWidth = maxLength < 9 ? 1 : 2;
+      var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+      var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+    
+      if(totalPages <= maxLength){
+        return range(1, totalPages);
+      }
+    
+      if(page <= maxLength - sideWidth - 1 - rightWidth){
+        return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+      }
+    
+      if(page >= totalPages - sideWidth - 1 - rightWidth){
+        return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+      }
+    
+      return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+    }
+    
+    $(function(){
+      var numberOfItems = $(".card-content .card").length;
+      var limitPerPage = 3; //How many card items visible per a page
+      var totalPages = Math.ceil(numberOfItems / limitPerPage);
+      var paginationSize = 7; //How many page elements visible in the pagination
+      var currentPage;
+    
+      function showPage(whichPage){
+        if(whichPage < 1 || whichPage > totalPages) return false;
+    
+        currentPage = whichPage;
+    
+        $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+    
+        $(".pagination li").slice(1, -1).remove();
+    
+        getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+          $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+          .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+          .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+        });
+    
+        $(".previous-page").toggleClass("disable", currentPage === 1);
+        $(".next-page").toggleClass("disable", currentPage === totalPages);
+        return true;
+      }
+    
+      $(".pagination").append(
+        $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("<")),
+        $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text(">"))
+      );
+    
+      $(".card-content").show();
+      showPage(1);
+    
+      $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+        return showPage(+$(this).text());
+      });
+    
+      $(".next-page").on("click", function(){
+        return showPage(currentPage + 1);
+      });
+    
+      $(".previous-page").on("click", function(){
+        return showPage(currentPage - 1);
+      });
+    });
+    </script>
+
+    <div class="bai-viet-menu">
+        <div class="menu-info">
+            Tất cả
+            <div class="underline" id="underline1"></div>
+        </div>
+        <div class="menu-info">
+            -
+        </div>
+        <div class="menu-info">
+            Chuyên mục
+            <div class="underline" id="underline2"></div>
+        </div>
+        <div class="menu-info">
+            -
+        </div>
+        <div class="menu-info">
+            Sôi nổi
+            <div class="underline" id="underline3"></div>
+        </div>
+    </div>
+    <div id="chuyen-muc">
+
+    </div>
+  <div class="footer">
+    <div class="footer-start">
+        <div class="link-icon">
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-tiktok"></i></span>
+        </div>
+        <div class="logo">
+            <span class="logo-info"><img src="./assets/img/logo.png" alt=""></span>
+            <span class="logo-info">
+                <h1>Writady</h1>
+                <div>Cảm hứng đến từ câu chuyện</div>
+            </span>
+        </div>
+        <div class="company">
+            <span class="company-info">Feedback</span>
+            <span class="company-info">Privacy</span>
+            <span class="company-info">Terms</span>
+            <span class="company-info">About</span>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <div class="footer-stuff">
+            <div><i class="fas fa-envelope"></i></div>
+            <div class="title-middle">MAIL</div>
+            <div class="detail-middle">writady.blog@gmail.com</div>
+        </div>
+        <div class="footer-stuff">
+            <div><i class="fas fa-phone-alt"></i></div>
+            <div class="title-middle">CALL</div>
+            <div class="detail-middle">+84 568 235 845</div>
+        </div>
+        <div class="footer-stuff">
+            <div><i class="fas fa-map-marker-alt"></i></div>
+            <div class="title-middle">FIND US</div>
+            <div class="detail-middle">Ho Chi Minh, Viet Nam</div>
+        </div>
+    </div>
+    <div class="footer-end">
+        Copyright © 2021 
+        <span>STHL & Co</span>
+        , All rights reserved.
+    </div>
+   
+</div>   
+  <script src="./assets/js/heading.js"></script>
+  <script src="./assets/js/profile.js"></script>
+  </body>
+</html>
+      
