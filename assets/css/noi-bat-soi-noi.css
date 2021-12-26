@@ -97,7 +97,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #000;
+    background-image: url(../img/avatar.jpg);
     background-position: center center;
 }
 
@@ -132,3 +132,4 @@
     cursor: pointer;
     color: #3398D4;
 }
+

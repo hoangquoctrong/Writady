@@ -12,7 +12,9 @@ body{
   position: relative;
   overflow-x: hidden;
 }
-
+img:hover{
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +23,13 @@ html,body {
 margin:0;
 padding:0;
 overflow-x:hidden;
+}
+h5{
+  color: #757575;
+}
+h5:hover{
+  cursor: pointer;
+  color: #3398D4;
 }
 
 a {
@@ -44,7 +53,7 @@ height: 100vh;
 
 
 .card-container{
-    height: 50vh;
+    height: 60vh;
     position: relative;
     width: 1200px;
     margin: 1rem 9rem 3rem;
@@ -67,7 +76,6 @@ height: 100vh;
   
   .card{
     position: relative;
-    background: #f0f0f0;
     max-width: 325px;
     width: 700px;
     margin: 20px;
@@ -77,15 +85,20 @@ height: 100vh;
   }
   
   .card-image{
-    max-height: 200px;
+   
+  }
+
+  .image-card img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+
   }
   
   .card-image img{
     max-width: 100%;
-    max-height: 200px;
-    width: 500px;
-    height: auto;
     border-radius: 7px;
+    object-fit: cover;
   }
   
   .card-info{
@@ -306,7 +319,6 @@ height: 100vh;
   margin-right: 30px;
   display: block;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
   white-space: nowrap;
   margin-bottom: -200px;
 }
@@ -332,7 +344,7 @@ height: 100vh;
 
 .box-kid-kid{
   border: gray;
-  background: gray;
+  background: #d6d6d6;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -402,4 +414,74 @@ height: 100vh;
 }
 .bai-viet-menu .with-name #underline1{
     display: block;
+}
+
+.profile-menu{
+  padding: 0 20rem;
+  text-align: center;
+  display: flex;
+}
+.menu-profile{
+  text-align: center;
+  font-size: 30px;
+  flex: 1;
+}
+.underline1{
+  margin-top: 10px;
+  margin-left: 38px;
+  text-align: center;
+  width: 90px;
+  height: 5px;
+  background: black;
+  display: none;
+}
+.profile-menu .with-name:hover .underline1, .profile-menu .with-name:hover{
+  cursor: pointer;
+}
+.profile-menu .with-name #underline4{
+  display: block;
+}
+
+.da-luu-menu{
+  margin-top: 4rem;
+  padding: 0 30rem;
+  text-align: center;
+  display: flex;
+}
+.menu-da-luu{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  flex: 1;
+}
+.underline2{
+  margin-top: 10px;
+  margin-left: 72px;
+  text-align: center;
+  width: 30px;
+  height: 5px;
+  background: black;
+  display: none;
+}
+.da-luu-menu .with-name:hover .underline2, .da-luu-menu .with-name:hover{
+  cursor: pointer;
+}
+.da-luu-menu .with-name #underline7{
+  display: block;
+}
+
+.add-suu-tap{
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 0;
+  margin: 0 25rem 5rem;
+  font-size: 30px;
+  width: auto;
+  background: #F0F0F0;
+  color: #3398D4;
+  border-radius: 15px;
+}
+.add-suu-tap:hover{
+  cursor: pointer;
+  background:black;
 }

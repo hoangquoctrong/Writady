@@ -120,7 +120,8 @@ html,body{
     bottom: 8px;
     border-radius: 50%;
     margin: 0 10px;
-    background-color: #000;
+    /* background-color: #000; */
+    background-image: url(../img/profile-avatar.png);
     background-position: center center;
 }
 

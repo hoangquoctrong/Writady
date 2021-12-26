@@ -90,27 +90,27 @@
 }
 
 .pc1{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/the-thao.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/the-thao.jfif);
 }
 
 .pc2{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/phim.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/phim.jfif);
 }
 
 .pc3{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/doi-song.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/doi-song.jfif);
 }
 
 .pc4{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/esport.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/esport.jfif);
 }
 
 .pc5{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/chuyen-tro.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/chuyen-tro.jfif);
 }
 
 .pc6{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/content-image/khoa-hoc.jfif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/content-image/khoa-hoc.jfif);
 }
 .list-chu-de .the-loai{
     font-family: 'Be Vietnam Pro';

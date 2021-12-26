@@ -11,7 +11,14 @@
     <script src="script1.js"></script>
     <link rel="icon" href="./assets/img/logo.png"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+    <script>
+        $(document).ready(function(){
+           
+           $('#content').load("./baiviet/baiviet.html");
+        
+        });
+        </script>
   </head>
   <body>
         <!--begin heading -->
@@ -92,9 +99,9 @@
                          </div>
                          <div class="user-box" id="user">
                              <div class="user-item" onclick="toProfile()">
-                                 <img src="./assets/img/avatar.jpg" alt="img">
+                                 <img src="./assets/img/profile-avatar.png" alt="img">
                                  <div class="text">
-                                     <h4>Long Tran</h4>
+                                     <h4>Long Trần</h4>
                                      <p>Trang cá nhân</p>
                                  </div>  
                                  </div>
@@ -120,18 +127,18 @@
          </div>
   <section id="home">
     <center>
-    <img src="../png/tree.png" alt="" width="1340" height="400" class="tree" style="border-radius: 25px; position: relative; box-shadow: 0 0px 25px rgb(1 1 1 / 40%);"> 
+    <img src="./png/tree.png" alt="" width="1340" height="400" class="tree" style="border-radius: 25px; position: relative; box-shadow: 0 0px 25px rgb(1 1 1 / 40%);"> 
     </center>
     <img src="assets/img/profile-avatar.png" alt="" width="300" height="400" style="position: relative; left: 150px;bottom: 40px;border-radius: 10px;">
     <div style="position: relative; bottom: 350px; left: 500px;">
     <h1 style="color: black;">Chào mừng bạn!</h1>
-    <span style="color: black; font-size: 50px;font-weight: 400;">Tôi là <span style="font-weight: bolder;">Long</span></span>
+    <span style="color: black; font-size: 50px;font-weight: 400;">Tôi là <span style="font-weight: bolder;">Long Trần</span></span>
     <h1 style="color: black; font-weight:bolder; font-size: 25px">Một nhà văn</h1> <br>
     <p style="color: black">Một người yêu thích lịch sử Mỹ. Hãy cùng tôi khám phá những điều thú vị trong chủ đề này nhé!</p>
     <span style="word-spacing: 10px;">
-        <img src="../png/facebook.png" alt="" height="30" style="border-radius: 50px">
-        <img src="../png/spotify.png" alt="" width="30" height="30" style="border-radius: 50px">
-        <img src="../png/youtube.png" alt="" width="30" height="30" style="border-radius: 50px">
+        <img src="./png/facebook.png" alt="" height="30" style="border-radius: 50px">
+        <img src="./png/spotify.png" alt="" width="30" height="30" style="border-radius: 50px">
+        <img src="./png/youtube.png" alt="" width="30" height="30" style="border-radius: 50px">
     </span>
     <h1 style="color: black;">Tác giả của tháng</h1>
     <div class="profile-information">
@@ -148,62 +155,32 @@
   <hr>
   <br>
   <br>
-  <section id="tangluongchotao">
-    <div class="nav-near-the-start">
-      <center>
-      <a  class="baiviet" href='#tangluongchotao' onclick=loadBaiviet()>Bài viết</a>
-      <a  class="baiviet" href='#tangluongchotao' onclick=loadDaluu()>Đã lưu</a>
-      <a  class="baiviet" href='#tangluongchotao' onclick=loadHtml3()>Bản nháp</a>
-    </center>
+  <div class="profile-menu">
+    <div class="menu-profile with-name" onclick="loadBaiviet()">
+
+        BÀI VIẾT
+        <div class="underline1" id="underline4"></div>
     </div>
-    <div id="content"></div>
-  </section>
-  <div class="footer">
-    <div class="footer-start">
-        <div class="link-icon">
-                <span><i class="fab fa-facebook"></i></span>
-                <span><i class="fab fa-twitter"></i></span>
-                <span><i class="fab fa-instagram"></i></span>
-                <span><i class="fab fa-tiktok"></i></span>
-        </div>
-        <div class="logo">
-            <span class="logo-info"><img src="./assets/img/logo.png" alt=""></span>
-            <span class="logo-info">
-                <h1>Writady</h1>
-                <div>Cảm hứng đến từ câu chuyện</div>
-            </span>
-        </div>
-        <div class="company">
-            <span class="company-info">Feedback</span>
-            <span class="company-info">Privacy</span>
-            <span class="company-info">Terms</span>
-            <span class="company-info">About</span>
-        </div>
+    <div class="menu-profile">
+        -
     </div>
-    <div class="footer-middle">
-        <div class="footer-stuff">
-            <div><i class="fas fa-envelope"></i></div>
-            <div class="title-middle">MAIL</div>
-            <div class="detail-middle">writady.blog@gmail.com</div>
-        </div>
-        <div class="footer-stuff">
-            <div><i class="fas fa-phone-alt"></i></div>
-            <div class="title-middle">CALL</div>
-            <div class="detail-middle">+84 568 235 845</div>
-        </div>
-        <div class="footer-stuff">
-            <div><i class="fas fa-map-marker-alt"></i></div>
-            <div class="title-middle">FIND US</div>
-            <div class="detail-middle">Ho Chi Minh, Viet Nam</div>
-        </div>
+    <div class="menu-profile with-name" onclick="loadDaLuu()">
+
+        ĐÃ LƯU
+        <div class="underline1" id="underline5"></div>
     </div>
-    <div class="footer-end">
-        Copyright © 2021 
-        <span>STHL & Co</span>
-        , All rights reserved.
+    <div class="menu-profile">
+        -
     </div>
-   
-</div>   
+    <div class="menu-profile with-name" onclick="loadBanNhap()">
+        
+        BẢN NHÁP
+        <div class="underline1" id="underline6"></div>
+    </div>
+</div>
+    <div id="content">
+
+    </div> 
 <script src="./assets/js/heading.js"></script>
 <script src="./assets/js/navigation.js"></script>
   <script src="./assets/js/profile.js"></script>

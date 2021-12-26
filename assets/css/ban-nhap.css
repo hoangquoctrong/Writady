@@ -1,0 +1,59 @@
+*{
+    font-family: 'Lora';
+}
+.contain{
+    margin-top: 4rem;
+}
+.container-nhap{
+   margin: 1rem 20rem;
+   height: 90px;
+   background: #F0F0F0;
+   border-radius: 10px;
+}
+.top-part{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 1rem;
+    font-family: 'Be Vietnam Pro';   
+}
+.bottom-part{
+    margin-top: 5px;
+    display: flex;
+}
+.bottom-part > .date{
+    margin-top: 10px;
+    margin-left: 1rem;
+    flex: 2;
+}
+.bottom-part > .button-nhap{
+    flex: 1;
+   
+}
+.btn{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background: white;
+    float: right;
+    display: inline;
+    margin-right: 2rem;
+}
+.btn:hover, .top-part:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    background: #d4d4d4;
+}
+.top-part:hover{
+    color: #3398D4;
+}
+.btn i{
+    margin-right: 1rem;
+}
+.button-continue , .button-continue > i{
+    color:#3398D4; ;
+}
+.button-delete , .button-delete > i {
+    color: #EB5959;
+}

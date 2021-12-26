@@ -254,7 +254,7 @@ html{
     font-weight: 300;
 }
 #sticker-avatar{
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-left: 1.8rem;
 }
 .btn-sticker{
@@ -270,9 +270,9 @@ html{
 .comment-number{
     font-size: 1rem;
 }
-#vote:hover{
+.vote:hover{
     cursor: pointer;
-    color: #83CBF3;
+    color: red;
 }
 
 /* end sticky-bar */

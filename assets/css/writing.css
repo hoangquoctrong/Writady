@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lora';
+
 }
 
 .body-content{
-    padding: 5rem 15rem
+    padding: 5rem 20rem
 }
 .title > textarea{
 font-size: 2rem;
@@ -14,28 +14,33 @@ padding-bottom: 1rem;
 width: 100%;
 resize: none;
 border:0;
+margin-top: 2rem;
 }
 .title > textarea:focus{
+    
     outline: none;
     }
+    .body-content > .add-content > span{
+        margin-top: 40px;
+    }
     .body-content > .add-content > span > i{
-        text-align: top;
-        font-size: 1rem;
+        font-size: 20px;
+        padding-right: 15px;
         color: #807E7E;
     }
     .body-content > .add-content > span > i:hover{
         color: #3398D4;
     }
-.add-content{
+.textInput{
     display: inline;
-    height: auto;
 }
 
 .body-content > .add-content > textarea{
+    font-family: 'Be Vietnam Pro';
+    font-size: 20px;
     width: 90%;
     border:0;
     resize: none;
-    font-family: 'Roboto';
 }
 .add-content > span{
     vertical-align: top;
@@ -56,19 +61,102 @@ border:0;
 .body-content > .add-content > div>span>i:hover{
     color: #3398D4;
 }
-.body-content > .add-content > div>span>i > .tooltiptext{
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
 .body-content > .add-content > .icons-function{
     display: none;
+}
+.toolIcon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .toolIcon .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #E8E8E8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 70%;
+    margin-left: -60px;
+  }
+  
+  .toolIcon .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .toolIcon:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .link{
+      margin-top: 20px;
+      width: 800px;
+      height: 35px;
+      border-radius: 5px;
+      border: 1px solid black;
+      font-size: 25px;
+  }
+  .link i{
+      padding: 5px 10px;
+  }
+  .link input{
+      width: 90%;
+      border: none;
+      font-size: 25px;
+  }
+  .link input:focus{
+      outline: none;
+  }
+  .quote{
+    margin-top: 20px;
+    width: 700px;
+    height: 35px;
+    font-size: 25px;
+    display: flex;
+  }
+  .quote div{
+    background: #3398D4;
+    width: 2px;
+    height: 100%;
+}
+.quote input{
+    margin-left: 10px;
+    width: 100%;
+    border: none;
+    font-size: 25px;
+}
+.quote input:focus{
+    outline: none;
+}
+.pull-quote{
+    margin-top: 20px;
+    width: 700px;
+    height: 35px;
+    font-size: 25px;
+    display: flex;
+  }
+  .pull-quote i{
+    color: #3398D4;
+    height: 100%;
+}
+.pull-quote input{
+    text-align: center;
+    margin-left: 10px;
+    width: 800px;
+    border: none;
+    font-size: 25px;
+}
+.pull-quote input:focus{
+    outline: none;
 }

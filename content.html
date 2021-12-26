@@ -133,9 +133,8 @@
         <!-- begin content-->
         <div class="content">
             <div class="sticky-bar">
-                <i class="fas fa-chevron-up" id="vote"></i>
-                <div class="favorite-number">500</div>
-                <i class="fas fa-chevron-down" id="vote"></i>
+                <i class="fas fa-heart vote" id="vote1" onclick="upFavorite()"></i>
+                <div class="favorite-number" id="favorite-number">14</div>
                 <img class="avatar" id="sticker-avatar" src="./assets/img/avatar.jpg" alt="">
                 <input type="submit" onclick="myFunction()" id="btn" class="btn-sticker btn" value="Theo dõi">
                 <div class="sticker-icons">
@@ -167,8 +166,8 @@
                     </div>
                     <div class="author">
                         <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                        <div class="author-information">
-                            Quoc Trong
+                        <div class="author-information" onclick="toProfileGuest()">
+                            Hoàng
                             <div class="Date-out">
                                 20 Tháng 10 2021
                             </div>
@@ -220,13 +219,10 @@
                 <div class="information" >
                     <div>
                         <span class="favorite">
-                            <i class="fas fa-chevron-up" id="vote"></i>
+                            <i class="fas fa-heart vote" style="color: red;" id="vote"></i>
                         </span>
                         <span class="favorite">
-                            <div>500</div>
-                        </span>
-                        <span class="favorite">
-                            <i class="fas fa-chevron-down" id="vote"></i>
+                            <div>14</div>
                         </span>
                         <span class="view">
                             <i class="far fa-eye"></i>
@@ -243,8 +239,8 @@
                 <div class="end-author">
                     <div class="author">
                         <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                        <div class="author-information">
-                            Quoc Trong
+                        <div class="author-information" onclick="toProfileGuest()">
+                            Hoàng
                             <div>
                                 Tác giả của tháng
                             </div>
@@ -443,8 +439,8 @@
                     <div class="user">
                         <div class="author">
                             <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                            <div class="author-information">
-                                Quoc Trong
+                            <div class="author-information" onclick="toProfileGuest()">
+                                Hoàng
                                 <div>
                                     21 tháng 10 2021
                                 </div>
@@ -459,13 +455,11 @@
                     </div>
                     <div class="comment-info">
                         <span class="favorite">
-                            <i class="fas fa-chevron-up" id="vote"></i>
+                            <i class="fas fa-heart vote" id="vote"></i>
                         </span>
                         <span class="favorite">
-                            <div>20</div>
+                            <div>14</div>
                         </span>
-                        <span class="favorite">
-                            <i class="fas fa-chevron-down" id="vote"></i>
                         <span class="reply-comment">
                             Trả lời
                         </span> 
@@ -475,8 +469,8 @@
                         <div class="user">
                             <div class="author">
                                 <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                                <div class="author-information">
-                                    Quoc Trong
+                                <div class="author-information" onclick="toProfileGuest()">
+                                    Hoàng
                                     <div>
                                         21 tháng 10 2021
                                     </div>
@@ -494,13 +488,11 @@
                             </div>
                             <div class="comment-info">
                                 <span class="favorite">
-                                    <i class="fas fa-chevron-up" id="vote"></i>
+                                    <i class="fas fa-heart vote" style="color: red;" id="vote"></i>
                                 </span>
                                 <span class="favorite">
-                                    <div>20</div>
+                                    <div>14</div>
                                 </span>
-                                <span class="favorite">
-                                    <i class="fas fa-chevron-down" id="vote"></i>
                                 <span class="reply-comment">
                                     Trả lời
                                 </span> 
@@ -512,8 +504,8 @@
                             <div class="user">
                                 <div class="author">
                                     <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                                    <div class="author-information">
-                                        Quoc Trong
+                                    <div class="author-information" onclick="toProfileGuest()">
+                                        Hoàng
                                         <div>
                                             21 tháng 10 2021
                                         </div>
@@ -531,13 +523,11 @@
                                 </div>
                                 <div class="comment-info">
                                     <span class="favorite">
-                                        <i class="fas fa-chevron-up" id="vote"></i>
+                                        <i class="fas fa-heart vote" id="vote"></i>
                                     </span>
                                     <span class="favorite">
-                                        <div>20</div>
+                                        <div>14</div>
                                     </span>
-                                    <span class="favorite">
-                                        <i class="fas fa-chevron-down" id="vote"></i>
                                     <span class="reply-comment">
                                         Trả lời
                                     </span> 
@@ -552,8 +542,8 @@
                         <div class="user">
                             <div class="author">
                                 <img class="avatar"  src="./assets/img/avatar.jpg" alt="">
-                                <div class="author-information">
-                                    Quoc Trong
+                                <div class="author-information" onclick="toProfileGuest()">
+                                    Hoàng
                                     <div>
                                         21 tháng 10 2021
                                     </div>
@@ -568,13 +558,11 @@
                         </div>
                         <div class="comment-info">
                             <span class="favorite">
-                                <i class="fas fa-chevron-up" id="vote"></i>
+                                <i class="fas fa-heart vote" style="color: red;"  id="vote"></i>
                             </span>
                             <span class="favorite">
-                                <div>20</div>
+                                <div>14</div>
                             </span>
-                            <span class="favorite">
-                                <i class="fas fa-chevron-down" id="vote"></i>
                             <span class="reply-comment">
                                 Trả lời
                             </span> 

@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-    <script src="script.js"></script>
-    <script src="script1.js"></script>
+
     <title>Document</title>
+    <script>
+      $(document).ready(function(){
+         
+         $('#contentex').load("../daluu/kid/tatca1.html");
+      
+      });
+      </script>
+    
 </head>
 <body>
-      <section id="home1">
-        <br>
-          <center>
-          <a class="daluu" href='#home1' onclick=loadDaluuTatca()>Tất cả</a>
-          <a class="daluu" href='#home1' onclick=loadDaluuBosuutap()>Bộ sưu tập</a>
-        </center>
-        <br>
-        <br>
-        <div id="contentex"></div>
-      </section>
+  <div class="da-luu-menu">
+    <div class="menu-da-luu with-name" onclick="loadDaluuTatca()">
+        Tất cả
+        <div class="underline2" id="underline7"></div>
+    </div>
+    <div class="menu-da-luu">
+        -
+    </div>
+    <div class="menu-da-luu with-name" onclick="loadDaluuBosuutap()">
+        Bộ sưu tập
+        <div class="underline2" id="underline8"></div>
+    </div>
+</div>
+<div id="contentex">
+
+</div>
+
+<div class="add-suu-tap">
+  +Tạo bộ sưu tập mới
+</div>
+<script src="../assets/js/profile.js"></script>
 </body>
 </html>
